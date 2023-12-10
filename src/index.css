@@ -2,9 +2,17 @@
 const initialItems = [
   { id: 1, description: "Passports", quantity: 2, packed: false },
   { id: 2, description: "Socks", quantity: 12, packed: false },
+  { id: 3, description: "Shoes", quantity: 10, packed: false }
 ];
 */
-
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+html{
+  scrollbar-width: none;
+}
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
 * {
@@ -78,6 +86,7 @@ input {
 }
 
 .list {
+  overflow-x: hidden !important;
   background-color: #5a3e2b;
   color: #ffebb3;
   padding: 4rem 0;
