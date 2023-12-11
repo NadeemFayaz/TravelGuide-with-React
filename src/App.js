@@ -23,11 +23,12 @@ function Logo(){
 function Form() {
   const[description,setDescription]=useState("testing");
   const[quantity,setQuantity]=useState(1);
+  const[item,setItem];
   function handleSubmit(e)
   {
     e.preventDefault();
   }
-  if(!description) return null;
+  
   const NewItem={description,quantity,packed:false,id:Date.now()};
   console.log(NewItem);
   return (
